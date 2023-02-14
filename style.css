@@ -1,0 +1,9 @@
+#side-bar {
+    background-color: aqua;
+    color: white;
+}
+
+.side-bar-svg, .dashboard-svg {
+    fill: white;
+    width: 30px;
+}
