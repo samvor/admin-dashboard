@@ -38,7 +38,8 @@ body {
 
 /* Sidebar section */
 #side-bar {
-    background-color: #0ea5e9;
+    background-color: #0284c7;
+    font-size: small;
     color: white;
     grid-row: 1 / 3;
     grid-column: 1 / 2;
@@ -46,7 +47,31 @@ body {
 
 #icon-dashboard, .icon-name {
     display: flex;
+    margin-left: 30px;
+}
 
+.side-bar-svg, .dashboard-svg {
+    fill: white;
+    width: 25px;
+    margin-right: 20px;
+}
+
+.dashboard-svg {
+    width: 50px;
+}
+
+#icon-dashboard {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+#dashboard {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+#side-bar-top {
+    margin-bottom: 30px;
 }
 
 /* Main page section */
@@ -56,10 +81,7 @@ body {
     grid-template-columns: 1fr 350px;
 }
 
-.side-bar-svg, .dashboard-svg {
-    fill: white;
-    width: 30px;
-}
+
 
 #search-svg, #notification-svg {
     width: 25px;
