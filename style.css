@@ -6,6 +6,7 @@ body {
     grid-template-rows: 200px 1fr;
 }
 
+/* Header section */
 #header {
     grid-row: 1 / 2;
     display: grid;
@@ -32,6 +33,7 @@ body {
     display: flex;
 }
 
+/* Sidebar section */
 #side-bar {
     background-color: #0ea5e9;
     color: white;
@@ -39,8 +41,16 @@ body {
     grid-column: 1 / 2;
 }
 
+#icon-dashboard, .icon-name {
+    display: flex;
+
+}
+
+/* Main page section */
 #main {
     grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 350px;
 }
 
 .side-bar-svg, .dashboard-svg {
