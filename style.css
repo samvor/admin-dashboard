@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+
+
 body {
     margin: 0;
     padding: 0;
@@ -7,6 +9,8 @@ body {
     grid-template-columns: 300px 1fr;
     grid-template-rows: 170px 1fr;
     font-family: 'Roboto', sans-serif;
+
+    --cards: 0 2px 6px rgb(0 0 0 / 20%);
 }
 
 /* Header section */
@@ -183,7 +187,7 @@ body {
 }
 
 .card {
-    height: 200px;
+    height: 220px;
     display: grid;
     grid: 40px 1fr 50px / 8px 1fr;
     background-color: white;
@@ -233,3 +237,32 @@ body {
     margin-right: 20px;
     margin-left: 20px;
 }
+
+#announcements-trending {
+    padding-left: 20px;
+}
+
+#announcements-card {
+    background-color: white;
+    box-shadow: var(--cards);
+    width: 220px;
+    height: 270px;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.announcement-heading {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.announcement-text {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    color: gray;
+}
+
