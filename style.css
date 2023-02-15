@@ -164,3 +164,72 @@ body {
     grid-template-columns: 1fr 350px;
     background-color: #f1f5f9;
 }
+
+#projects {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#my-projects {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.section-heading {
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+.card {
+    height: 200px;
+    display: grid;
+    grid: 40px 1fr 50px / 8px 1fr;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 20%);
+}
+
+.card-side {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    padding: 0;
+    margin: 0;
+    background-color: #fbbf24;
+    border-radius: 10px 0 0 10px;
+}
+
+.project-title {
+    align-self: end;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0;
+    margin: 0 0 0 15px;
+}
+
+.project-text {
+    font-size: 14px;
+    color: gray;
+    margin: 6px 0 0 15px;
+}
+
+.icons-section {
+    align-self: start;
+    justify-self: end;
+    padding-right: 30px;
+}
+
+.card-icon {
+    width: 22px;
+    margin-top: 10px;
+}
+
+.card-icon:hover {
+    cursor: pointer;
+}
+
+.card-icon:nth-child(2) {
+    margin-right: 20px;
+    margin-left: 20px;
+}
