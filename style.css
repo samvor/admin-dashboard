@@ -4,19 +4,22 @@
 
 body {
     margin: 0;
-    padding: 0 0 calc(vh+20px) 0;
+    padding: 0;
+    height: 100vh;
     display: grid;
     grid-template-columns: 300px 1fr;
     grid-template-rows: 170px 1fr;
     font-family: 'Roboto', sans-serif;
 
-    --cards: 0 2px 6px rgb(0 0 0 / 20%);
+    --cards: 0 2px 6px
+    rgb(0 0 0 / 20%);
 }
 
 /* Header section */
 #header {
     grid-row: 1 / 2;
     display: grid;
+    max-height: 170px;
     grid: auto 1fr / 3fr 2fr;
     background-color: white;
     height: inherit;
@@ -46,7 +49,7 @@ body {
     width: 80%;
     border-radius: 20px;
     border: 1px solid white;
-    background-color: #d4d4d8;
+    background-color: #f1f5f9;
     padding: 0 20px 0 20px;
 }
 
@@ -58,6 +61,14 @@ body {
     margin-right: 50px;
     justify-self: end;
     align-items: center;
+}
+
+#profile-name:hover,
+#notification-svg:hover, 
+#personal-small:hover, 
+#personal-large:hover, 
+#profile-handle:hover {
+    cursor: pointer;
 }
 
 #personal-small {
@@ -152,6 +163,19 @@ body {
     margin-bottom: 30px;
     margin-left: 20px;
 }
+
+.icon-name:hover {
+    cursor: pointer;
+}
+
+#icon-dashboard:hover {
+    cursor: pointer;
+}
+
+.side-bar-name {
+    font-weight: 500;
+}
+
 #dashboard {
     font-size: 28px;
     font-weight: 500;
@@ -165,7 +189,7 @@ body {
 #main {
     grid-row: 2 / 3;
     display: grid;
-    grid-template-columns: 1fr 350px;
+    grid-template-columns: 1fr 330px;
     background-color: #f1f5f9;
 }
 
@@ -216,6 +240,7 @@ body {
     font-size: 14px;
     color: gray;
     margin: 6px 0 0 15px;
+    padding-right: 15px;
 }
 
 .icons-section {
@@ -297,4 +322,9 @@ body {
     margin: 0;
     margin-top: 5px;
     font-size: 12px;
+}
+
+.handle-post:hover,
+.profile-photo:hover {
+    cursor: pointer;
 }
