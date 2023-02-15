@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    padding: 0;
+    padding: 0 0 calc(vh+20px) 0;
     display: grid;
     grid-template-columns: 300px 1fr;
     grid-template-rows: 170px 1fr;
@@ -266,3 +266,35 @@ body {
     color: gray;
 }
 
+#trending-card {
+    background-color: white;
+    box-shadow: var(--cards);
+    width: 240px;
+    height: 280px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.trend {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-photo {
+    height: 40px;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+
+.handle {
+    margin: 0;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.post {
+    margin: 0;
+    margin-top: 5px;
+    font-size: 12px;
+}
